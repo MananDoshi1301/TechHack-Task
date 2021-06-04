@@ -1,10 +1,13 @@
 import React from 'react'
+import Nav from '../Common/Nav/Nav';
 import Banner from './Banner/Banner'
 
 const Home = () => {
     return (
-        <div className='container-fluid p-0'>
-            <Banner />
+        <div>
+            <Nav />
+            <Banner />  
+            
         </div>
     )
 }

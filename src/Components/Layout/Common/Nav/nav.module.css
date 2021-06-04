@@ -1,0 +1,21 @@
+.custNav{
+    /* position: sticky;        
+    top: 0; */
+}
+
+.custBrand > img{    
+    width: 7em;
+}
+
+.custLinks{
+    
+}
+
+.custItem{
+    font-size: 1.5em;
+    font-weight: block;
+}
+
+.scrollNav{
+    background-color: pink;
+}
