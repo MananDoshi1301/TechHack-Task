@@ -6,6 +6,7 @@ import CyberCrimeDef from './CyberCrimeDef/CyberCrimeDef';
 import WeAssure from './Weassure/WeAssure';
 import Weoffer from './Weoffer/Weoffer';
 import WhyUs from './WhyUs/WhyUs';
+import Testimonials from './Testimonials/Testimonials';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <WhyUs />
             <Weoffer />
             <WeAssure />
+            <Testimonials />
         </div>
     )
 }
