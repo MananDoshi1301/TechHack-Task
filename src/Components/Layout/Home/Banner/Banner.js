@@ -7,8 +7,8 @@ const Banner = () => {
     <div>
       <div className="container-fluid">
           <div className="row">
-              <div className={`col-lg-4`}></div>
-              <div className="col-lg-8">
+              <div className={`col-lg-5`}></div>
+              <div className="col-lg-7">
                   <img src={bannerImg} className='img-fluid' />
               </div>
           </div>
