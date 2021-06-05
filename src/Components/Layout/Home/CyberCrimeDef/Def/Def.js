@@ -5,7 +5,7 @@ import defImg from '../../../../Images/def.jpg';
 const Def = () => {
   return (
     <div>
-      <div className='container'>          
+      <div className='container'>                     
         <div className='row'>
           <div className='col-lg-6'>
             <img src={defImg} alt='' className='img-fluid' />
@@ -18,11 +18,7 @@ const Def = () => {
               Cybercrime, or computer crime, is a crime that involves a computer
               and a network. The computer may have been used in the commission
               of a crime, or it may be the target.
-            </div>
-            <div className="row">
-                <div className="col-lg-6"></div>
-                <div className="col-lg-6"></div>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
