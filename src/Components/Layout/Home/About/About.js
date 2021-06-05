@@ -18,10 +18,7 @@ const About = () => {
             and over 10 industry projects. We have trained over 800 students in
             the field of cyber security and our students have been recognised by
             the government of India. Our major objective is to create a one stop
-            solution for learning Cyber security from scratch. We offer courses
-            right from extreme beginner level up-to super advanced. Each
-            training program is packed with tons of Internship and freelancing
-            opportunities.
+            solution for learning Cyber security from scratch.
           </div>
         </div>
       </div>
@@ -34,15 +31,13 @@ const About = () => {
             <img className={`img-fluid`} src={whyUsImg} alt='' />
           </div>
           <div className={`col-lg-6 fs-3`}>
-            TechHack provides Two assured Internship opportunities and over 10
-            industry projects simultaneously with the regular live training. We
-            have zero pre-recorded sessions and committed to the practical based
-            approach. Throughout the course, you will involve in numerous real
-            time projects of real start-ups and get global standard exposure. We
-            will handhold you at each and every step with our 24/7 expert
-            support. Weekly practical and assignments will be provided for
-            better sanctity. Our mentors have an average experience of 3+ years
-            and they have worked with top global firms such as Requestee,
+            We have zero pre-recorded sessions and committed to the practical
+            based approach. Throughout the course, you will involve in numerous
+            real time projects of real start-ups and get global standard
+            exposure. We will handhold you at each and every step with our 24/7
+            expert support. Weekly practical and assignments will be provided
+            for better sanctity. Our mentors have an average experience of 3+
+            years and they have worked with top global firms such as Requestee,
             Lazyhackers and many more.
           </div>
         </div>
