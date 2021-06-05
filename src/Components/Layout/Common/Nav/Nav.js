@@ -18,7 +18,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className={`container-fluid ${isScrolled?styles.scrollNav:''}`} style={{position:'sticky', top:'0'}}>
+    <div className={`container-fluid ${isScrolled?styles.scrollNav:''}`} style={{position:'sticky', top:'0', zIndex:1000}}>
       <div className={`${styles.custNav} d-flex justify-content-between`}>
         <div className={`${styles.custBrand}`}>
           <img src={logo} alt='' />
