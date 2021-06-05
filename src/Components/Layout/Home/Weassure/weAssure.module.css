@@ -1,3 +1,20 @@
 .weAssureTitle{
     font-family: 'Abril Fatface', cursive;
 }
+
+.custCardImg{
+    transition: all 0.2s ease-in;
+}
+
+.custCard:hover .custCardImg{
+    opacity: 0.05;
+}
+
+.custCardText{
+    opacity: 0;    
+    transition: all .2s ease;
+}
+
+.custCard:hover .custCardText{
+    opacity: 1;
+}
