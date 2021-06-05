@@ -66,7 +66,7 @@ export default class Example extends PureComponent {
     return (
       <div style={{ width: '100%', height: 300 }}>
         <ResponsiveContainer>
-          <AreaChart
+          {/* <AreaChart
             data={data}
             margin={{
               top: 10,
@@ -80,8 +80,8 @@ export default class Example extends PureComponent {
             <YAxis />
             <Tooltip />
             <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-          </AreaChart>
-          {/* <BarChart
+          </AreaChart> */}
+          <BarChart
           width={500}
           height={300}
           data={data}
@@ -99,7 +99,7 @@ export default class Example extends PureComponent {
           <Legend />
           <CartesianGrid strokeDasharray="3 3" />
           <Bar dataKey="pv" fill="#8884d8" background={{ fill: '#eee' }} />
-        </BarChart> */}
+        </BarChart>
         </ResponsiveContainer>
       </div>
     );
