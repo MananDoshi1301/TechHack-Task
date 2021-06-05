@@ -1,4 +1,5 @@
 import React from 'react';
+import CrimeChart from './CrimeChart';
 import styles from './def.module.css';
 import defImg from '../../../../Images/def.jpg';
 
@@ -14,11 +15,19 @@ const Def = () => {
             <div className={`${styles.defHead} display-2`}>
               What is CyberCrime?
             </div>
-            <div className='fs-4'>
+            <div className='fs-5'>
               Cybercrime, or computer crime, is a crime that involves a computer
               and a network. The computer may have been used in the commission
               of a crime, or it may be the target.
-            </div>            
+            </div>   
+            <div className="row mt-5">
+              <div className="col-lg-5">
+
+              </div>
+              <div className="col-lg-7">
+                <CrimeChart />
+              </div>
+            </div>         
           </div>
         </div>
       </div>
