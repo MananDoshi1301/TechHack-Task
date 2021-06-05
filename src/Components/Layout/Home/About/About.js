@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './about.module.css';
-import whyUsImg from '../../../Images/whyUs.jpg';
+import whyUsImg from '../../../Images/whyUs1.jpg';
 
 const About = () => {
   return (
