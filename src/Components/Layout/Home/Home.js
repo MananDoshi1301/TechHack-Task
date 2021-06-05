@@ -7,6 +7,7 @@ import WeAssure from './Weassure/WeAssure';
 import Weoffer from './Weoffer/Weoffer';
 import WhyUs from './WhyUs/WhyUs';
 import Testimonials from './Testimonials/Testimonials';
+import Footer from '../Common/Footer/Footer';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Weoffer />
             <WeAssure />
             <Testimonials />
+            <Footer />
         </div>
     )
 }
