@@ -4,6 +4,7 @@ import About from './About/About';
 import Banner from './Banner/Banner'
 import CyberCrimeDef from './CyberCrimeDef/CyberCrimeDef';
 import Weoffer from './Weoffer/Weoffer';
+import WhyUs from './WhyUs/WhyUs';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner />  
             <CyberCrimeDef />
             <About />
+            <WhyUs />
             <Weoffer />
         </div>
     )
