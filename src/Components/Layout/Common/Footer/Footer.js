@@ -30,10 +30,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    {icon:'fab fa-youtube', link:''},
-    {icon:'fab fa-linkedin-in', link:''},
-    {icon:'fab fa-instagram', link:''},
-    {icon:'far fa-envelope', link:''},
+    {icon:'fab fa-youtube', link:'', color:'#FF0000'},
+    {icon:'fab fa-linkedin-in', link:'', color:'#0077b5'},
+    {icon:'fab fa-instagram', link:'', color:'#E1306C'},
+    {icon:'far fa-envelope', link:'', color:'#000000'},
   ]
 
   return (
@@ -57,7 +57,7 @@ const Footer = () => {
               {footerList.map((list, key) => {
                 return (
                   <ul key={key} className={``} style={{listStyleType:'none'}}>
-                    <div className={`fs-2 fw-bold ${styles.listHead}`}>{list.ul[0]}</div>
+                    <div className={`fs-2 fw-bold ${styles.listHead}`} style={{color:'#2C4E9F'}}>{list.ul[0]}</div>
                     {list.ul[1].map((listItem, key) => {
                       return <li className={`fs-5 ${styles.listItem}`} key={key}>{listItem.link}</li>;
                     })}
@@ -70,13 +70,13 @@ const Footer = () => {
           <div>
               <div className='container-fluid'>
                 <div className="row">
-                <div className={`col-lg-6 d-flex align-items-center fs-3 ${styles.listHead} fw-bold`}>&copy; TechHack Technologies 2021 All Rights Reserved.</div>
+                <div className={`col-lg-6 d-flex align-items-center fs-3 ${styles.listHead} fw-bold`} style={{color:'#2C4E9F'}}>&copy; TechHack Technologies 2021 All Rights Reserved.</div>
                 <div className="col-lg-2"></div>
                 <div className='col-lg-4 d-flex justify-content-between align-items-center'>
-                  <div className={`fs-3 ${styles.listHead} fw-bold`}>Follow Us:</div>
+                  <div className={`fs-3 ${styles.listHead} fw-bold`} style={{color:'#2C4E9F'}}>Follow Us:</div>
                   {socialLinks.map((link, key)=>{
                     return (
-                      <div key={key}><i className={`${link.icon} fa-3x`}></i></div>
+                      <div key={key} className={`${styles.iconDiv}`}><i className={`${link.icon} fa-3x`} style={{color:link.color}}></i></div>
                     )
                   })}                  
                 </div>

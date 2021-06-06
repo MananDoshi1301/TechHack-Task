@@ -30,7 +30,7 @@ const Nav = () => {
           <img src={logo} alt='' />
         </div>
         <div
-          className={`${styles.custLinks} d-flex justify-space-between align-items-center gap-5`}
+          className={`${styles.custLinks} d-flex justify-space-between align-items-center gap-5 `}
         >
           {navData.map((navItem, key)=>{
             return (

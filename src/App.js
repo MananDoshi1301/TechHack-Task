@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Components/Layout/Home/Home';
+import "aos/dist/aos.css";
 
 function App() {
   return (

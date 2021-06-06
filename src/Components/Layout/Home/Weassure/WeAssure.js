@@ -4,6 +4,8 @@ import liveCurrImg from '../../../Images/liveCurr.jpg';
 import assuredInternImg from '../../../Images/assuredIntern1.jpg';
 import indProjectsImg from '../../../Images/indProjects.jpg';
 import learnTogImg from '../../../Images/learnTog.jpg';
+import AOS from "aos";
+AOS.init();
 
 const WeAssure = () => {
   const cardDataRow1 = [
@@ -45,7 +47,7 @@ const WeAssure = () => {
   return (
     <div className='mainContainer'>
       <div className='container mb-5'>
-        <div className={`${styles.weAssureTitle} display-1 text-center`}>
+        <div className={`${styles.weAssureTitle} display-1 text-center`} data-aos="fade-down" data-aos-delay={1500}>
           We Assure You With!
         </div>
         {totalRows.map((row, key) => (

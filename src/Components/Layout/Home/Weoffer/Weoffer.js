@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './weoffer.module.css';
 import weOfferImg from '../../../Images/weOffer.jpg';
+import AOS from "aos";
+AOS.init();
 
 const Weoffer = () => {
   const data = [
@@ -11,14 +13,14 @@ const Weoffer = () => {
   return (
     <div className='mainContainer'>
       <div className='container'>
-        <div className={`${styles.weOfferTitle} display-1`} >What We Have To Offer!</div>
+        <div className={`${styles.weOfferTitle} display-1`} data-aos="fade-right" data-aos-delay={1500}>What We Have To Offer!</div>
         <div className='row'>
           <div className='col-lg-6'>
             <ul className='d-flex flex-column justify-content-evenly h-100' style={{listStyleType:'none'}}>
               {data.map((data, key)=>(
                 <li key={key}>
-                <div className={`fs-2 ${styles.weOfferTitle}`}>{data.title}</div>
-                <div className={`fs-5 ${styles.weOfferText}`}>{data.text}</div>
+                <div className={`fs-2 ${styles.weOfferTitle}`} data-aos="fade-right" data-aos-delay={1000}>{data.title}</div>
+                <div className={`fs-5 ${styles.weOfferText}`} data-aos="fade-right" data-aos-delay={1000}>{data.text}</div>
               </li>
               ))}                            
             </ul>
