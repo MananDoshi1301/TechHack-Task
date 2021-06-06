@@ -6,6 +6,10 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+.custCardShadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .custCardImg{
     transition: all 0.2s ease-in;
 }
@@ -15,6 +19,8 @@
 }
 
 .custCardText{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
     opacity: 0;    
     transition: all .2s ease;
 }

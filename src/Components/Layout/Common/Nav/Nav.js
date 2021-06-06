@@ -17,6 +17,12 @@ const Nav = () => {
     return () => window.removeEventListener('scroll', navTransition);
   }, []);
 
+  const navData=[
+    {data:'Home'},
+    {data:'Trainings'},
+    {data:'Webinars'},
+    {data:'Contact'},
+  ]
   return (
     <div className={`container-fluid ${isScrolled?styles.scrollNav:''}`} style={{position:'sticky', top:'0', zIndex:1000}}>
       <div className={`${styles.custNav} d-flex justify-content-between`}>
@@ -26,10 +32,11 @@ const Nav = () => {
         <div
           className={`${styles.custLinks} d-flex justify-space-between align-items-center gap-5`}
         >
-          <div className={`${styles.custItem}`}>Home</div>
-          <div className={`${styles.custItem}`}>Trainings</div>
-          <div className={`${styles.custItem}`}>Webinars</div>
-          <div className={`${styles.custItem}`}>Contact Us</div>
+          {navData.map((navItem, key)=>{
+            return (
+              <div className={`${styles.custItem}`}>{navItem.data}</div>
+            )
+          })}                    
         </div>
       </div>
     </div>

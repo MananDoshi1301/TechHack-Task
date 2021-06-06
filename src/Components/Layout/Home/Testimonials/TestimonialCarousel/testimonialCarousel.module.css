@@ -6,3 +6,11 @@
 .userText{
     font-family: 'Quicksand', sans-serif;
 }
+
+.carouselBar {
+    width: 400px;
+  }
+  
+  .carouselBarSpan {
+    transition: width 0.6s ease;
+  }

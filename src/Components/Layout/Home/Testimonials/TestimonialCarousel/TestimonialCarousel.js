@@ -38,6 +38,10 @@ const TestimonialCarousel = () => {
     },
   ];
 
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const [totalSlides, setTotalSlides] = useState(data.length);
+  const [progress, setProgress] = useState((1 / totalSlides) * 100);
+
   const carouselProps = {
     showThumbs: false,
     swipeable: true,
@@ -64,7 +68,7 @@ const TestimonialCarousel = () => {
         onClick={onClickHandler}
         title={label}
       >
-        <i className='fas fa-long-arrow-alt-right fa-5x arrow-icon'></i>
+        <i className='fas fa-long-arrow-alt-right fa-5x arrow-icon' style={{color:'#2C4E9F'}}></i>
       </div>
     );
   };
@@ -72,19 +76,19 @@ const TestimonialCarousel = () => {
   const leftArrow = (onClickHandler, label) => {
     return (
       <div
-        style={{ ...arrowStyles, left: '30px' }}
+        style={{ ...arrowStyles, left: '30px', zIndex: '1' }}
         onClick={onClickHandler}
         title={label}
       >
-        <i className='fas fa-long-arrow-alt-left fa-5x arrow-icon'></i>
+        <i className='fas fa-long-arrow-alt-left fa-5x arrow-icon' style={{color:'#2C4E9F'}}></i>
       </div>
     );
   };
 
   const slideChange = (current) => {
-    // const value = Number((current + 1) / totalSlides) * 100;
-    // setCurrentSlide(current + 1);
-    // setProgress(value);
+    const value = Number((current + 1) / totalSlides) * 100;
+    setCurrentSlide(current + 1);
+    setProgress(value);
   };
 
   return (
@@ -93,14 +97,14 @@ const TestimonialCarousel = () => {
         <Carousel
           className=''
           {...carouselProps}
-          //   renderArrowNext={rightArrow}
-          //   renderArrowPrev={leftArrow}
+          renderArrowNext={rightArrow}
+          renderArrowPrev={leftArrow}
           onChange={(current) => {
             slideChange(current);
           }}
         >
           {data.map((user, key) => (
-            <div>
+            <div key={key}>
               <div className='container'>
                 <div className='row'>
                   <div className='col-lg-1'></div>
@@ -115,10 +119,14 @@ const TestimonialCarousel = () => {
 
                   <div className='col-lg-7 d-flex align-items-center justify-content-center'>
                     <div>
-                      <div className={`text-uppercase display-1 ${styles.userName}`}>
+                      <div
+                        className={`text-uppercase display-1 ${styles.userName}`}
+                      >
                         {user.name}
                       </div>
-                      <div className={`${styles.userText} fs-5`}>"{user.text}"</div>
+                      <div className={`${styles.userText} fs-5`}>
+                        "{user.text}"
+                      </div>
                     </div>
                   </div>
                   <div className='col-lg-1'></div>
@@ -127,6 +135,30 @@ const TestimonialCarousel = () => {
             </div>
           ))}
         </Carousel>
+        <div>
+            <div className='d-flex  justify-content-end align-items-center mt-3'>
+              <div className={`text-muted`}>0{currentSlide}</div>
+              <div className={`${styles.carouselBar} mx-3 d-flex align-items-center`}>
+                <span
+                  className={`${styles.carouselBarSpan}`}
+                  style={{
+                    background: 'linear-gradient(45deg, #2C4E9F, #CDE0FD)',
+                    width: `${progress}%`,
+                    height: '5px',
+                  }}
+                ></span>
+                <span
+                  className={`${styles.carouselBarSpan}`}
+                  style={{
+                    backgroundColor: 'gray',
+                    width: `${100 - progress}%`,
+                    height: '1px',
+                  }}
+                ></span>
+              </div>
+              <div className={`text-muted`}>0{totalSlides}</div>
+            </div>
+          </div>
       </div>
     </div>
   );

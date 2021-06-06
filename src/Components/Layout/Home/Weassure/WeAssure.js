@@ -56,14 +56,14 @@ const WeAssure = () => {
                 key={key}
               >
                 <h5
-                  className={`display-5 text-center p-2 ${styles.custCardTitle} rounded-top`}
+                  className={`display-5 text-center p-2 ${styles.custCardTitle} ${styles.custCardShadow} rounded-top`}
                   style={{ backgroundColor:card.imgColor }}
                 >
                   {card.title}
                 </h5>
-                <div className={`card border-0`}>
+                <div className={`card border-0 ${styles.custCardShadow}`}>
                   <div className='card-img-overlay'>                    
-                    <p className={`card-text ${styles.custCardText}`}>
+                    <p className={`card-text ${styles.custCardText} fs-4`}>
                       {card.text}
                     </p>
                   </div>

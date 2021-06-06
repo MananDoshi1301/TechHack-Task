@@ -16,6 +16,7 @@
     font-weight: block;
 }
 
-.scrollNav{
-    background-color: pink;
+.scrollNav{    
+    background-color: #CDE0FD;
+    transition: all 0.4s ease-in-out;
 }

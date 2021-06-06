@@ -12,7 +12,7 @@ const About = () => {
           <div
             className={`col-lg-12 ${styles.aboutText} fs-3 text-center mt-3`}
           >
-            <span className=''>TechHack</span> is the only training firm in
+            <span className={`fs-1`}><ins>TechHack</ins></span> is the only training firm in
             India to provide regular live training sessions, assured internships
             and over 10 industry projects. We have trained over 800 students in
             the field of cyber security and our students have been recognised by
