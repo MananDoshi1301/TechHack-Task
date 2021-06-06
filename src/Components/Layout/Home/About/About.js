@@ -3,7 +3,7 @@ import styles from './about.module.css';
 
 const About = () => {
   return (
-    <div>
+    <div className='mainContainer'>
       <div className='container my-5'>
         <div className={`display-1 text-center ${styles.aboutHead}`}>
           Start Your Career With THT!

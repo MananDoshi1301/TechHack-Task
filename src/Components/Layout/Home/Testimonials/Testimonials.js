@@ -4,7 +4,7 @@ import styles from './testimonials.module.css';
 
 const Testimonials = () => {
     return (
-        <div>
+        <div className='mainContainer'>
             <div className={`${styles.testimonialsHead} display-1 text-center my-5`}>What our Alumni's Say...</div>
             <TestimonialCarousel />
         </div>

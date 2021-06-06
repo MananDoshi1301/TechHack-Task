@@ -11,7 +11,7 @@ const WhyUs = () => {
     {data:"Our mentors have an average experience of 3+ years and they have worked with top global firms such as Requestee, Lazyhackers and many more."},
   ]
   return (
-    <div>
+    <div className='mainContainer'>
       <div className='container my-5'>
         <div className={`display-1 text-center ${styles.whyUsHead} my-3`}>
           Why Us?

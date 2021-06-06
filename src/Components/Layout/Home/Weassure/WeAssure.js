@@ -43,7 +43,7 @@ const WeAssure = () => {
   const totalRows = [{ obj: cardDataRow1 }, { obj: cardDataRow2 }];
 
   return (
-    <div>
+    <div className='mainContainer'>
       <div className='container mb-5'>
         <div className={`${styles.weAssureTitle} display-1 text-center`}>
           We Assure You With!

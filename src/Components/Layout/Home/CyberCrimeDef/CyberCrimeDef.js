@@ -3,7 +3,7 @@ import Def from './Def/Def'
 
 const CyberCrimeDef = () => {
     return (
-        <div>
+        <div className='mainContainer'>
             <Def />
         </div>
     )

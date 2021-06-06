@@ -9,7 +9,7 @@ const Weoffer = () => {
     {title:'Start-To-End Courses',text:'We offer courses right from extreme beginner level up-to super advanced.',icon:''},
   ]
   return (
-    <div>
+    <div className='mainContainer'>
       <div className='container'>
         <div className={`${styles.weOfferTitle} display-1`} >What We Have To Offer!</div>
         <div className='row'>

@@ -37,7 +37,7 @@ const Footer = () => {
   ]
 
   return (
-    <div>
+    <div className='mainContainer'>
       <div className='container-fluid p-0 m-0 mt-5' style={{
         backgroundSize:'cover',
         backgroundImage: `url(${backgroundWave})`,
