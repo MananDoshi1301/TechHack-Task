@@ -11,6 +11,12 @@
     
 }
 
+@media (max-width:612px){
+    .custLinks{
+        display: none;
+    }   
+}
+
 .custItem{
     font-size: 1.5em;
     font-weight: block;

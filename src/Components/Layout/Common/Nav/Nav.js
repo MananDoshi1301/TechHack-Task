@@ -34,7 +34,7 @@ const Nav = () => {
         >
           {navData.map((navItem, key)=>{
             return (
-              <div className={`${styles.custItem}`}>{navItem.data}</div>
+              <div className={`${styles.custItem} ${styles.custLinks}`}>{navItem.data}</div>
             )
           })}                    
         </div>

@@ -2,6 +2,18 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+@media (max-width:612px) {
+    .footerLogo{
+        display: none;
+    }
+}
+
+@media (max-width:368px) {
+    .listHead, .listItem{
+        display:none;
+    }
+}
+
 .listHead{
     font-family: 'Quicksand', sans-serif;
 }
