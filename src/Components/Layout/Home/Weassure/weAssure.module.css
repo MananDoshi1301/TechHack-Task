@@ -2,6 +2,10 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+.custCardTitle{
+    font-family: 'Abril Fatface', cursive;
+}
+
 .custCardImg{
     transition: all 0.2s ease-in;
 }

@@ -1,8 +1,11 @@
-.userName{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 900;
+.footerHead{
+    font-family: 'Abril Fatface', cursive;
 }
 
-.userText{
+.listHead{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.listItem{
     font-family: 'Quicksand', sans-serif;
 }

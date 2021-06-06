@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className={`row`}>
           <div
-            className={`col-lg-12 ${styles.aboutText} fs-2 text-center mt-3`}
+            className={`col-lg-12 ${styles.aboutText} fs-3 text-center mt-3`}
           >
             <span className=''>TechHack</span> is the only training firm in
             India to provide regular live training sessions, assured internships

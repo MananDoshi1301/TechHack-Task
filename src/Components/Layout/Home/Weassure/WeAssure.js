@@ -35,7 +35,7 @@ const WeAssure = () => {
       title: 'Learn & Earn Together',
       text: 'Throughout each course, you shall be provided with freelance projects. Get compensated for utilising your skills, build up your freelancing portfolio and get honest recommendations from over 10 start-ups you work with. All in at ZERO cost.',
       img: learnTogImg,
-      imgColor: '#2646B5',
+      imgColor: '#ADBBF8',
       colLg: 6,
     },
   ];
@@ -56,18 +56,13 @@ const WeAssure = () => {
                 key={key}
               >
                 <h5
-                  className={`display-4 text-center ${styles.custCardTitle} rounded-top`}
+                  className={`display-5 text-center p-2 ${styles.custCardTitle} rounded-top`}
                   style={{ backgroundColor:card.imgColor }}
                 >
                   {card.title}
                 </h5>
                 <div className={`card border-0`}>
-                  <div className='card-img-overlay'>
-                    <div>
-                      {/* <h5 className={`card-title ${styles.custCardTitle}`} style={{zIndex:10}}>
-                        {card.title}
-                      </h5> */}
-                    </div>
+                  <div className='card-img-overlay'>                    
                     <p className={`card-text ${styles.custCardText}`}>
                       {card.text}
                     </p>

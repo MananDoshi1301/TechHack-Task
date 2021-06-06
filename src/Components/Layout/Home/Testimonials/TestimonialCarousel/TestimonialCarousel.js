@@ -89,7 +89,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div>
-      <div className='container'>
+      <div className='container my-5'>
         <Carousel
           className=''
           {...carouselProps}
@@ -104,7 +104,7 @@ const TestimonialCarousel = () => {
               <div className='container'>
                 <div className='row'>
                   <div className='col-lg-1'></div>
-                  <div className='col-lg-2'>
+                  <div className='col-lg-2 col-md-2 col-sm-2 col-2 d-flex align-items-center justify-content-center'>
                     <img
                       src={user.img ? user.img : ''}
                       className={`img-fluid ${styles.userImg}`}
@@ -113,14 +113,15 @@ const TestimonialCarousel = () => {
                   </div>
                   <div className='col-lg-1'></div>
 
-                  <div className='col-lg-8 d-flex align-items-center justify-content-center'>
+                  <div className='col-lg-7 d-flex align-items-center justify-content-center'>
                     <div>
-                      <div className={`text-uppercase display-1 fw-bold`}>
+                      <div className={`text-uppercase display-1 ${styles.userName}`}>
                         {user.name}
                       </div>
-                      <div>"{user.text}"</div>
+                      <div className={`${styles.userText} fs-5`}>"{user.text}"</div>
                     </div>
                   </div>
+                  <div className='col-lg-1'></div>
                 </div>
               </div>
             </div>

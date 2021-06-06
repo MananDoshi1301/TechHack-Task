@@ -3,6 +3,13 @@ import styles from './whyUs.module.css';
 import whyUsImg from '../../../Images/whyUs1.jpg'
 
 const WhyUs = () => {
+  const text = [
+    {data:'We have zero pre-recorded sessions and committed to the practical based approach.'},
+    {data:"Throughout the course, you will involve in numerous real time projects of real start-ups and get global standard exposure."},
+    {data:"We will handhold you at each and every step with our 24/7 expert support."},
+    {data:"Weekly practical and assignments will be provided for better sanctity."},
+    {data:"Our mentors have an average experience of 3+ years and they have worked with top global firms such as Requestee, Lazyhackers and many more."},
+  ]
   return (
     <div>
       <div className='container my-5'>
@@ -13,15 +20,12 @@ const WhyUs = () => {
           <div className={`col-lg-6`}>
             <img className={`img-fluid`} src={whyUsImg} alt='' />
           </div>
-          <div className={`col-lg-6 fs-3`}>
-            We have zero pre-recorded sessions and committed to the practical
-            based approach. Throughout the course, you will involve in numerous
-            real time projects of real start-ups and get global standard
-            exposure. We will handhold you at each and every step with our 24/7
-            expert support. Weekly practical and assignments will be provided
-            for better sanctity. Our mentors have an average experience of 3+
-            years and they have worked with top global firms such as Requestee,
-            Lazyhackers and many more.
+          <div className={`col-lg-6 fs-5 ${styles.whyUsContent} d-flex flex-column justify-content-around`}>
+            {text.map((text, key)=>{
+              return (
+                <div key={key}>{text.data}</div>    
+              )
+            })}                                  
           </div>
         </div>
       </div>
